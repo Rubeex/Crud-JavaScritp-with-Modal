@@ -1,0 +1,102 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"
+    />
+    <!-- Default theme -->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"
+    />
+
+    <!-- CSS only -->
+    <title>CRUD Javascript</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="contenedor-form">
+      </div>
+      <div class="container">
+        <button id="btncreate" type="button" class="btn btn-primary btn-center" data-bs-toggle="modal" data-bs-target="#modal_producto">Nuevo</button>
+        <table
+          id="tablaproductos"
+          class="table mt-2 table-bordered table-striped"
+        >
+          <thead>
+            <tr class="text-center">
+              <th>Id Producto</th>
+              <th>Nombre</th>
+              <th>Cantidad</th>
+              <th>Precio</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id = "productos">
+           
+        </tbody>
+        </table>
+        <div class="resultado" align="right">
+          <ul id="total"></ul>
+        </div>
+      </div>
+    </div>
+    
+    <div id="modal_producto" class= "modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Productos</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">ID producto:</label>
+                <input type="text" class="form-control" id="idproducto">
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Nombre:</label>
+                <input type="text" class="form-control" id="producto">
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Cantidad:</label>
+                <input type="number" class="form-control" id="cantidad">
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Precio:</label>
+                <input type="number" class="form-control" id="precio">
+              </div>
+        
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>    
+
+    <!-- JavaScript -->
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+    <script src="producto.js"></script>
+  </body>
+</html>

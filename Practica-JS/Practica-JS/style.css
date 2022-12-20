@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn-center{
+   margin-left: 500px;
+}
+.contenedor-tabla{
+    width: 50%;
+    margin-top: 50px;
+    padding: 30px;
+}
+table {
+    width: 100%;
+    border: 1px solid #000;
+ }
+ th, td {
+    width: 25%;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #000;
+    text-align: center;
+ }
+.contenedor-form{
+    width: 50%;
+    margin-top: 50px;
+    padding: 30px;
+}
+
+input{
+    width: 50%;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.boton{
+    border-radius: 10px;
+    padding: 10px;
+}
+.resultado{
+    margin-top: 29px;
+}
+
+li{
+    list-style: none;
+}
